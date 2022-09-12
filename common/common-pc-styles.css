@@ -35,7 +35,7 @@ main {
   margin: 60px 180px 5px 180px;
   padding: 10px;
   border-radius: 10px;
-  flex-grow: calc(100%);
+  flex-grow: 1;
 }
 
 main h1 {
