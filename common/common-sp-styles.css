@@ -22,7 +22,6 @@ header a {
 }
 
 article {
-  font-size: 30px;
   height: 97vh;
   display: flex;
   flex-direction: column;
@@ -30,6 +29,7 @@ article {
 
 main {
   background-color: #ffffff;
+  font-size: 30px;
   margin: 120px 45px 5px 45px;
   padding: 20px;
   border-radius: 10px;

@@ -22,7 +22,6 @@ header a {
 }
 
 article {
-  font-size: 15px;
   height: 97vh;
   display: flex;
   flex-direction: column;
