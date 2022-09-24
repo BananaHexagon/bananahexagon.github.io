@@ -26,10 +26,13 @@ body {
   right: calc(100% - 800px);
   bottom: 0;
   top: 0;
+  transition:left 0.5s,right 0.5s;
 }
 
 #sidemenu.sidemenu_off {
-	display: none;
+  overflow: auto;
+	right: 100%;
+  left: -100%;
 }
 
 article {
@@ -84,7 +87,6 @@ header {
 
 .hamburger div:nth-of-type(1) {
   bottom: 26px;
-  
 }
 
 .hamburger div:nth-of-type(2) {
