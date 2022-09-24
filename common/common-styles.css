@@ -23,7 +23,7 @@ body {
   background-color: #ffffff;
   padding: 70px 20px 20px 20px;
   left: 0;
-  right: calc(100% - 500px);
+  right: calc(100% - 800px);
   bottom: 0;
   top: 0;
 }
@@ -96,5 +96,5 @@ header {
 }
 
 #sideswitch {
-	display:none;
+  display:none;
 }
