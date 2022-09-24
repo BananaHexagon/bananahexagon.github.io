@@ -1,26 +1,31 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html><head>
+    <link rel="stylesheet" href="common/common-styles.css">
     <title>バナナの巣</title>
-    <link rel="stylesheet" href="common/common-pc-styles.css">
-    <link rel="stylesheet" media="(max-width: 640px)" href="common/common-sp-styles.css">
   </head>
   <body>
-    <header>
-      <a href="index.html">Home</a>
-      <a href="index.html">Home(2)</a>
-    </header>
-    <article>
-      <main>
+    <div id="menushadow" class="sidemenu_off"></div>
+    <div id="sidemenu" class="sidemenu_off">
         <h1>バナナの巣</h1>
-        <p>Bananafoolishのブログです</p>
-        <p>気が向いた時にでも更新していこうかなと思います</p>
-        <p>よろしくね</p>
-        <p>工事中</p>
-        <a href="https://bananafoolish.github.io/article/profile.html">自己紹介</a>
+      <p>Bananafoolishがなんかやってるブログです</p>
+      <p>工事中。よろしくね</p>
+    </div><article>
+      <main>
+        <h1>h1！！！</h1>
+          <p>本文</p>
+          <h2>h2！！！</h2>
       </main>
       <footer>
         <p>特記のない限り、ページ内のコンテンツは全て<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>の下に利用可能です。</p>
       </footer>
     </article>
-  </body>
-</html>
+    <header>
+	  <label class="hamburger" id="hamburger1">
+        <div></div>
+        <div></div>
+        <div></div>
+        <input type="checkbox" id="sideswitch" onclick="buttonClick()" for="hamburger1">
+      </label>
+    </header>
+<script src="common/common-scripts.js"></script>
+</body></html>
