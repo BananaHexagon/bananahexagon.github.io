@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+  background-color: #dfdfdf;
+  color: #2f2f2f ;
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#menushadow {
+  position: fixed;
+  background-color: #2f2f2f;
+  inset: 0;
+  opacity: 0.5;
+}
+
+#menushadow.sidemenu_off {
+	display: none;
+}
+
+#sidemenu {
+  position: fixed;
+  background-color: #ffffff;
+  padding: 70px 20px 20px 20px;
+  left: 0;
+  right: calc(100% - 500px);
+  bottom: 0;
+  top: 0;
+}
+
+#sidemenu.sidemenu_off {
+	display: none;
+}
+
+article {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background-color: #ffffff;
+  margin: 50px 160px 10px 160px;
+  padding: 20px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  border-bottom: solid 2px #dfdfdf;
+}
+
+footer {
+  height: 100px;
+  background-color: #9f9f9f;
+}
+
+header {
+  background-color: #f4f4f4;
+  display: flex;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.hamburger {
+  padding: 8px 33px 31px 8px;
+}
+
+.hamburger div {
+  position: absolute;
+  height: 3px;
+  width: 24px;
+  background-color: #2f2f2f;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.hamburger div:nth-of-type(1) {
+  bottom: 26px;
+  
+}
+
+.hamburger div:nth-of-type(2) {
+  bottom: 18px;
+}
+
+.hamburger div:nth-of-type(3) {
+  bottom: 10px;
+}
+
+#sideswitch {
+	display:none;
+}
