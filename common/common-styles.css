@@ -12,10 +12,14 @@ body {
   background-color: #2f2f2f;
   inset: 0;
   opacity: 0.5;
+  transition: left 0.5s, right 0.5s;
+  left: 0%;
+  right: 0%;
 }
 
 #menushadow.sidemenu_off {
-	display: none;
+  left: 0%;
+  right: 100%;
 }
 
 #sidemenu {
@@ -26,22 +30,22 @@ body {
   right: calc(100% - 800px);
   bottom: 0;
   top: 0;
-  transition:left 0.5s,right 0.5s;
+  transition: left 0.5s, right 0.5s;
 }
 
 #sidemenu.sidemenu_off {
   overflow: auto;
-	right: 100%;
+  right: 100%;
   left: -100%;
 }
 
-article {
+main {
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-main {
+article {
   background-color: #ffffff;
   margin: 50px 160px 10px 160px;
   padding: 20px;
@@ -60,6 +64,9 @@ h2 {
 footer {
   height: 100px;
   background-color: #9f9f9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
