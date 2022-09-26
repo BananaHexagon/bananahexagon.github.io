@@ -7,6 +7,10 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 #menushadow {
   position: fixed;
   background-color: #2f2f2f;
