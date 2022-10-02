@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 
-#menushadow {
+#menu_shadow {
   position: fixed;
   background-color: #2f2f2f;
   inset: 0;
@@ -21,12 +21,12 @@ a {
   right: 0%;
 }
 
-#menushadow.sidemenu_off {
+#menu_shadow.left_off {
   left: 0%;
   right: 100%;
 }
 
-#sidemenu {
+#left_menu {
   position: fixed;
   background-color: #ffffff;
   padding: 70px 20px 20px 20px;
@@ -37,7 +37,7 @@ a {
   transition: left 0.5s, right 0.5s;
 }
 
-#sidemenu.sidemenu_off {
+#left_menu.left_off {
   overflow: auto;
   right: 100%;
   left: -100%;
@@ -49,12 +49,30 @@ main {
   flex-direction: column;
 }
 
+.submain {
+  flex-grow: 1;
+  display: flex;
+  margin: 50px 160px 10px 160px;
+}
+
 article {
   background-color: #ffffff;
-  margin: 50px 160px 10px 160px;
   padding: 20px;
   border-radius: 10px;
-  flex-grow: 1;
+  flex-grow: 1.5;
+}
+
+#right_menu {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  flex-grow: 0.5;
+  margin-left: 50px;
+  transition: margin-left 0.5s, flex-grow 0.5s;
+}
+
+#right_menu.right_off {
+	display: none;
 }
 
 h1 {
@@ -81,6 +99,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  justify-content:space-between;
 }
 
 .hamburger {
