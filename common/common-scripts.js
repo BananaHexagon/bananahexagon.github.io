@@ -17,7 +17,7 @@ let menu_shadow = document.getElementById("menu_shadow");
 let right_switch = document.getElementById("right_switch");
 let right_menu = document.getElementById("right_menu");
 
-let ads_list = ["541060657"];
+let ads_list = ["541060657","739525745","736963480"];
 let ads_random = Math.floor(Math.random() * ads_list.length);
 let ads_html = '<iframe src="https://turbowarp.org/' + ads_list[ads_random] + '/embed/?interpolate&hqpen" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><a href ="https://scratch.mit.edu/projects/' + ads_list[ads_random] + '">リンク</a>';
 
