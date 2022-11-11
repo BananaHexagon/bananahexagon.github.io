@@ -27,8 +27,13 @@ h1 {
 }
 
 h2 {
+  font-size: 150%;
   border-bottom-style: solid;
   border-bottom-width: 2px;
+}
+
+h3 {
+  font-size: 125%;
 }
 
 footer {
