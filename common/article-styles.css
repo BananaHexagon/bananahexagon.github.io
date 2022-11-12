@@ -1,49 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 body {
-  background-color: #dfdfdf;
-  color: #2f2f2f ;
-  font-family: 'Noto Sans JP', sans-serif;
+	background-color: #dfdfdf;
+	color: #2f2f2f ;
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
 #menu_shadow {
-  background-color: #2f2f2f;
+	background-color: #2f2f2f;
 }
 
 #left_menu {
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 article {
-  background-color: #ffffff;
-}
-
-#right_menu {
-  background-color: #f8f8f8;
+	background-color: #ffffff;
 }
 
 h1 {
-  font-size: 200%;
+	font-size: 200%;
 }
 
 h2 {
-  font-size: 150%;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-}
-
-h3 {
-  font-size: 125%;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
 }
 
 footer {
-  background-color: #9f9f9f;
+	background-color: #9f9f9f;
 }
 
-header {
-  background-color: #f4f4f4;
+.hamburger {
+	background-color: #afafaf;
+	border-radius: 10px;
+	opacity: 0.7;
+}
+
+.hamburger:hover {
+	border-radius: 10px;
+	opacity: 0.9;
 }
 
 .hamburger div {
-  background-color: #2f2f2f;
+	background-color: #2f2f2f;
 }
