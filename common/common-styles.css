@@ -1,94 +1,86 @@
 body {
-  margin: 0;
+	margin: 0;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 #menu_shadow {
-  position: fixed;
-  inset: 0;
-  opacity: 0.5;
-  transition: left 0.5s, right 0.5s;
-  left: 0%;
-  right: 0%;
+	position: fixed;
+	inset: 0;
+	opacity: 0.5;
+	transition: left 0.5s, right 0.5s;
+	left: 0%;
+	right: 0%;
 }
 
 #menu_shadow.left_off {
-  left: 0%;
-  right: 100%;
+	left: 0%;
+	right: 100%;
 }
 
 #left_menu {
-  position: fixed;
-  padding: 70px 20px 20px 20px;
-  left: 0;
-  right: calc(100% - 800px);
-  bottom: 0;
-  top: 0;
-  transition: left 0.5s, right 0.5s;
+	position: fixed;
+	padding: 70px 20px 20px 20px;
+	left: 0;
+	right: calc(100% - 1200px);
+	bottom: 0;
+	top: 0;
+	transition: left 0.5s, right 0.5s;
 }
 
 #left_menu.left_off {
-  overflow: auto;
-  right: 100%;
-  left: -100%;
+	overflow: auto;
+	right: 100%;
+	left: -100%;
 }
 
 main {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .submain {
-  flex-grow: 1;
-  display: flex;
-  margin: 50px 160px 10px 160px;
+	flex-grow: 1;
+	display: flex;
+	margin: 10px 160px 10px 160px;
 }
 
 article {
-  padding: 20px;
-  border-radius: 10px;
-  flex-grow: 1.5;
-}
-
-#right_menu {
-  padding: 20px;
-  border-radius: 10px;
-  flex-grow: 0.5;
-  margin-left: 50px;
-  transition: margin-left 0.5s, flex-grow 0.5s;
-}
-
-#right_menu.right_off {
-	display: none;
+	padding: 20px;
+	border-radius: 10px;
+	flex-grow: 1;
 }
 
 h1 {
-  font-size: 200%;
+	font-size: 200%;
 }
 
 h2 {
-  border-bottom-color: #dfdfdf;
+	border-bottom-color: #dfdfdf;
 }
 
 footer {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer div {
+	height: 8em;
 }
 
 header {
-  display: flex;
-  height: 40px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  justify-content:space-between;
+	display: flex;
+	height: 40px;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	right: 0;
+	justify-content:space-between;
 }
 
 .hamburger {
@@ -96,25 +88,25 @@ header {
 }
 
 .hamburger div {
-  position: absolute;
-  height: 3px;
-  width: 24px;
-  border-radius: 3px;
-  display: inline-block;
+	position: absolute;
+	height: 3px;
+	width: 24px;
+	border-radius: 3px;
+	display: inline-block;
 }
 
 .hamburger div:nth-of-type(1) {
-  bottom: 26px;
+	bottom: 26px;
 }
 
 .hamburger div:nth-of-type(2) {
-  bottom: 18px;
+	bottom: 18px;
 }
 
 .hamburger div:nth-of-type(3) {
-  bottom: 10px;
+	bottom: 10px;
 }
 
 input {
-  display:none;
+	display:none;
 }
