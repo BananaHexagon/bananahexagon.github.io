@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 body {
-	background-color: #2f2f2f;
+	background-color: #000000;
 	color: #dfdfdf ;
 	font-family: 'Noto Sans JP', sans-serif;
 }
 
+a {
+	color: #dfdf00
+}
+
 #menu_shadow {
-	background-color: #2f2f2f;
+	background-color: #000000;
 }
 
 #left_menu {
-	background-color: #0f0f0f;
+	background-color: #1f1f1f;
 }
 
 article {
-	background-color: #0f0f0f;
+	background-color: #1f1f1f;
 }
 
 h1 {
