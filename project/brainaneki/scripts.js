@@ -74,7 +74,7 @@ function interpret(code) {
 				break;
 		}
 	}
-	console.log(out);
+	alert(out);
 }
 
 function anticompile(code) {
