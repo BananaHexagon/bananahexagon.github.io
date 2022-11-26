@@ -110,3 +110,7 @@ header {
 header input {
 	display:none;
 }
+
+#page_credits {
+	display:none;
+}
