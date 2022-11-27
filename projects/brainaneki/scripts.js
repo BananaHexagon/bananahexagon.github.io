@@ -22,7 +22,6 @@ function interpret(code) {
 	let out = "";
 	let mem = [...Array(37564)].map(x => 0);
 	let point = 18782;
-	let loop = 0;
 	for(let i = 0; i < code.length + 1; i++) {
 		switch(code[i]) {
 			case ">" :
@@ -42,7 +41,7 @@ function interpret(code) {
 				break;
 			case "[" :
 				if (mem[point] == 0) {
-					loop = 1;
+					let loop = 1;
 					while(loop != 0) {
 						i++;
 						switch(code[i]) {
@@ -58,7 +57,7 @@ function interpret(code) {
 				break;
 			case "]" :
 				if (mem[point] != 0) {
-					loop = 1;
+					let loop = 1;
 					while(loop != 0) {
 						i--;
 						switch(code[i]) {
