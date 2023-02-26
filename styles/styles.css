@@ -199,3 +199,7 @@ h5 {
     font-size: 1.3em;
     font-weight: normal;
 }
+
+del {
+    background-size: 100% 2px;
+}
