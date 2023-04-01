@@ -44,7 +44,7 @@ main.insertAdjacentHTML("beforebegin", `
 `);
 main.insertAdjacentHTML("beforeend", `
 <footer>
-  <p>特記のない限り、このサイトのコンテンツは<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a>の下で利用可能です</p>
+  <p>特記のない限り、このサイトのコンテンツは<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a>の下で利用可能です。</p>
 </footer>
 `);
 
