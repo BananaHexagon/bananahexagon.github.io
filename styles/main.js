@@ -17,8 +17,9 @@ main.insertAdjacentHTML("beforebegin", `
   </li>
   <li>Projects
     <ul>
-      <li><a href="/projects/sludgetale">Sludgetale</a></li>
-      <li><a href="/projects/">Other</a></li>
+      <li><a href="/butter-docs">Butter-lang</a></li>
+      <li><a href="/sludgetale">Sludgetale</a></li>
+      <li><a href="/projects">Other</a></li>
     </ul>
   </li>
 </ul>
