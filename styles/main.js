@@ -1,25 +1,25 @@
 let main = document.querySelector("main");
 main.insertAdjacentHTML("beforebegin", `
 <header>
-<a href="/index.html"><img src="/styles/bananahexagon.png"></a>
+<a href="/docs/index.html"><img src="/styles/bananahexagon.png"></a>
 <ul>
   <li>Info
     <ul>
-      <li><a href="/info/about">About</a></li>
-      <li><a href="/info/profile">Profile</a></li>
-      <li><a href="/info/contact">Contact</a></li>
+      <li><a href="/docs/info/about">About</a></li>
+      <li><a href="/docs/info/profile">Profile</a></li>
+      <li><a href="/docs/info/contact">Contact</a></li>
     </ul>
   </li>
   <li>Blog
     <ul>
-      <li><a href="/blog/2023">2023</a></li>
+      <li><a href="/docs/blog/2023">2023</a></li>
     </ul>
   </li>
   <li>Projects
     <ul>
-      <li><a href="/butter-docs">Butter-lang</a></li>
-      <li><a href="/sludgetale">Sludgetale</a></li>
-      <li><a href="/projects">Other</a></li>
+      <li><a href="https://bananahexagon.github.io/butter-docs">Butter-lang</a></li>
+      <li><a href="/docs/sludgetale">Sludgetale</a></li>
+      <li><a href="/docs/projects">Other</a></li>
     </ul>
   </li>
 </ul>
