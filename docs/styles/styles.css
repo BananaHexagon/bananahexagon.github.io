@@ -13,10 +13,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: #bf40ff;
-}
-
 header {
     background-color: #d4af37;
     position: fixed;
