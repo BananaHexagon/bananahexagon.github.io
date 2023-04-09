@@ -23,6 +23,6 @@ document.head.appendChild((() => {
     return element;
 })())
 
-body.onload((()=>{
+window.onload((()=>{
     Importjs("/src/styles_pc.js");
 })());
