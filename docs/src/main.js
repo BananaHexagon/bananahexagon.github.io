@@ -20,5 +20,7 @@ document.head.appendChild((() => {
     let element = document.createElement("link");
     element.rel = "icon";
     element.href = "/assets/favicon.ico";
-})());
+    return element;
+})())
+
 Importjs("/src/styles_pc.js");
