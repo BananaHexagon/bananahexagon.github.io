@@ -1,7 +1,7 @@
 let main = document.querySelector("main");
 main.insertAdjacentHTML("beforebegin", `
 <header>
-<a href="/docs/index.html"><img src="/styles/bananahexagon.png"></a>
+<a href="/index.html"><img src="/styles/bananahexagon.png"></a>
 <ul>
   <li>Info
     <ul>
