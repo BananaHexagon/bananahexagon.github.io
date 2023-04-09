@@ -15,12 +15,10 @@ function Importcss(src) {
     return element;
 }
 
-
-
-Importcss("/src/styles.css");
+Importcss("/src/styles_pc.css");
 document.head.appendChild((() => {
     let element = document.createElement("link");
     element.rel = "icon";
-    element.href = "/favicon.ico";
-})())
-Importjs("/src/styles.js");
+    element.href = "/assets/favicon.ico";
+})());
+Importjs("/src/styles_pc.js");

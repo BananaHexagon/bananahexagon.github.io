@@ -1,9 +1,10 @@
 "use strict"
 
 let main = document.querySelector("main");
+
 main.insertAdjacentHTML("beforebegin", `
 <header>
-  <a href="/index.html"><img src="/styles/bananahexagon.png"></a>
+  <a href="/index.html"><img src="/assets/bananahexagon.png"></a>
   <ul>
     <li>Info
       <ul>
@@ -30,6 +31,7 @@ main.insertAdjacentHTML("beforebegin", `
   </div>
 </header>
 `);
+
 main.insertAdjacentHTML("beforebegin", `
 <div class="sidemenu">
   <div class="menu_shadow" />
@@ -45,16 +47,17 @@ main.insertAdjacentHTML("beforebegin", `
   </div>
 </div>
 `);
+
 main.insertAdjacentHTML("beforeend", `
 <footer>
   <p>特記のない限り、このサイトのコンテンツは<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a>の下で利用可能です。</p>
 </footer>
 `);
 
-let menu_button = document.querySelector(".menu_button");    
-let side_menu = document.querySelector(".sidemenu");    
-  menu_button.addEventListener("click", () => {
-    menu_button.classList.toggle("button_right");
-    side_menu.classList.toggle("menu_opened");
-	}
+let menu_button = document.querySelector(".menu_button");
+let side_menu = document.querySelector(".sidemenu");
+menu_button.addEventListener("click", () => {
+  menu_button.classList.toggle("button_right");
+  side_menu.classList.toggle("menu_opened");
+}
 );
