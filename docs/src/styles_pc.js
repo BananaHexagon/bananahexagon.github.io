@@ -57,12 +57,4 @@ main.insertAdjacentHTML("beforeend", `
 
 article.insertAdjacentHTML("afetrbegin",`
 <div class="time_stamp">​</div>
-`)
-
-let menu_button = document.querySelector(".menu_button");
-let side_menu = document.querySelector(".sidemenu");
-menu_button.addEventListener("click", () => {
-  menu_button.classList.toggle("button_right");
-  side_menu.classList.toggle("menu_opened");
-}
-);
+`);
