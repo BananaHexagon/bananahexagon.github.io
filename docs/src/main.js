@@ -25,4 +25,10 @@ document.head.appendChild((() => {
 
 window.onload = () => {
     Importjs("/src/styles_pc.js");
+    let time_stamp = "";
+    const last_edited = document.querySelector("meta[name='last_edited']");
+    time_stamp += last_edited == null ? "" : last_edited;
+    const page_created = document.querySelector("meta[name='page_created']");
+    time_stamp += page_created == null ? "" : page_created;
+    document.querySelectorAll("time_stamp")[0].insertAdjacentText("afterbegin", time_stamp);
 }

@@ -1,6 +1,7 @@
 "use strict"
 
 let main = document.querySelector("main");
+let article = document.querySelector("article");
 
 main.insertAdjacentHTML("beforebegin", `
 <header>
@@ -53,6 +54,10 @@ main.insertAdjacentHTML("beforeend", `
   <p>特記のない限り、このサイトのコンテンツは<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a>の下で利用可能です。</p>
 </footer>
 `);
+
+article.insertAdjacentHTML("afetrbegin",`
+<div class="time_stamp">​</div>
+`)
 
 let menu_button = document.querySelector(".menu_button");
 let side_menu = document.querySelector(".sidemenu");
