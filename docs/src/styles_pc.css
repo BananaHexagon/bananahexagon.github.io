@@ -205,6 +205,6 @@ del {
     background-size: 100% 2px;
 }
 
-div.time_stamp {
-    margin-top: 0;
+h1 {
+    margin-top: 0.5em;
 }
