@@ -55,6 +55,6 @@ main.insertAdjacentHTML("beforeend", `
 </footer>
 `);
 
-article.insertAdjacentHTML("afetrbegin",`
+article.insertAdjacentHTML("afterbegin",`
 <div class="time_stamp">​</div>
 `);

@@ -24,18 +24,20 @@ document.head.appendChild((() => {
 })())
 
 window.onload = () => {
-    Importjs("/src/styles_pc.js");
-    let time_stamp = "";
-    const last_edited = document.querySelector("meta[name='last_edited']");
-    time_stamp += last_edited == null ? "" : last_edited;
-    const page_created = document.querySelector("meta[name='page_created']");
-    time_stamp += page_created == null ? "" : page_created;
-    document.getElementsByClassName("time_stamp")[0].textContent(time_stamp);
-    
-    let menu_button = document.querySelector(".menu_button");
-    let side_menu = document.querySelector(".sidemenu");
-    menu_button.addEventListener("click", () => {
-        menu_button.classList.toggle("button_right");
-        side_menu.classList.toggle("menu_opened");
-    });
+    Importjs("/src/styles_pc.js").onload = () => {
+
+        let time_stamp = "";
+        const last_edited = document.querySelector("meta[name='last_edited']");
+        time_stamp += last_edited == null ? "" : last_edited;
+        const page_created = document.querySelector("meta[name='page_created']");
+        time_stamp += page_created == null ? "" : page_created;
+        document.getElementsByClassName("time_stamp")[0].textContent(time_stamp);
+
+        let menu_button = document.querySelector(".menu_button");
+        let side_menu = document.querySelector(".sidemenu");
+        menu_button.addEventListener("click", () => {
+            menu_button.classList.toggle("button_right");
+            side_menu.classList.toggle("menu_opened");
+        });
+    }
 }
