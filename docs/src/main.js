@@ -25,12 +25,11 @@ document.head.appendChild((() => {
 
 window.onload = () => {
     Importjs("/src/styles_pc.js").onload = () => {
-
         let time_stamp = "";
-        const last_edited = document.querySelector("meta[name='last_edited']");
-        time_stamp += last_edited == null ? "" : last_edited;
         const page_created = document.querySelector("meta[name='page_created']");
-        time_stamp += page_created == null ? "" : page_created;
+        time_stamp += page_created == "作成日" + (null ? "-" : page_created.content);
+        const last_edited = document.querySelector("meta[name='last_edited']");
+        time_stamp += last_edited == "更新日" + (null ? "-" : last_edited.content);
         document.getElementsByClassName("time_stamp")[0].textContent = time_stamp;
 
         let menu_button = document.querySelector(".menu_button");
