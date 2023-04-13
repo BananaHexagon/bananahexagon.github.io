@@ -204,3 +204,7 @@ h5 {
 del {
     background-size: 100% 2px;
 }
+
+div.time_stamp {
+    margin-top: 0;
+}
