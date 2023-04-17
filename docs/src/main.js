@@ -24,7 +24,9 @@ document.head.appendChild((() => {
 })())
 
 window.onload = () => {
-    Importjs("/src/styles_pc.js").onload = () => {
+    if (document.querySelector("meta[name='stub']") != null) {
+        window.location.href = "/404.html"
+    } else Importjs("/src/styles_pc.js").onload = () => {
         let time_stamp = "";
         const page_created = document.querySelector("meta[name='page_created']");
         time_stamp += "作成日 - " + (page_created == null ? "" : page_created.content + " ") + "| ";
