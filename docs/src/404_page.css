@@ -1,0 +1,14 @@
+
+body {
+    background-color: #ccc;
+}
+
+canvas {
+    width: 640px;
+    height: 480px;
+    position: absolute;
+    margin: auto;
+    background-color: #fff;
+    inset: 0;
+    image-rendering: pixelated;
+}
