@@ -1,7 +1,7 @@
 const canvas = document.getElementById("canvas");
 const ctx = this.canvas.getContext("2d");
 
-const stamp = function (dx, dy, dd = 0, size = 100, wh = 1,) {
+const stamp = function (costume, dx, dy, dd = 0, size = 100, wh = 1,) {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     ctx.save();
     ctx.translate(dx, dy);
@@ -24,7 +24,7 @@ async function main() {
         const update = () => {
             timer++;
 
-            stamp(Math.sin(timer * rad) * 45, 0, Math.sin(timer * rad) * 45, 400, Math.sin(timer * rad) * 1 + 1.25)
+            stamp(costume, Math.sin(timer * rad) * 45, 0, Math.sin(timer * rad) * 45, 400, Math.sin(timer * rad) * 1 + 1.25)
             window.requestAnimationFrame(update);
         }
 
