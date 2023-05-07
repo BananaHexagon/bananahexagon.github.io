@@ -31,4 +31,4 @@ async function main() {
     window.requestAnimationFrame(update);
 }
 
-await main(); 
+window.onload = main; 
