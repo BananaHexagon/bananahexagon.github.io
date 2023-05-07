@@ -16,7 +16,8 @@ async function main() {
         image.src = "/assets/bananahexagon.png";
         return image;
     })();
-    const submain = () => {
+
+    costume.onload = () => {
         let timer = 0;
         const rad = Math.PI / 180
 
@@ -29,7 +30,7 @@ async function main() {
 
         window.requestAnimationFrame(update);
     }
-    costume.onload = submain
+
 }
 
 main();
