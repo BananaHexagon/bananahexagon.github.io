@@ -11,24 +11,25 @@ const stamp = function (dx, dy, dd = 0, size = 100, wh = 1,) {
 }
 
 async function main() {
-    const costume = await (async function () {
+    const costume = (() => {
         let image = new Image();
         image.src = "/assets/bananahexagon.png";
-        image.onload = () => {
-            resolve();
-        }
+        return image;
     })();
-    let timer = 0;
-    const rad = Math.PI / 180
+    const submain = () => {
+        let timer = 0;
+        const rad = Math.PI / 180
 
-    const update = () => {
-        timer++;
+        const update = () => {
+            timer++;
 
-        stamp(Math.sin(timer * rad) * 45, 0, Math.sin(timer * rad) * 45, 400, Math.sin(timer * rad) * 1 + 1.25)
+            stamp(Math.sin(timer * rad) * 45, 0, Math.sin(timer * rad) * 45, 400, Math.sin(timer * rad) * 1 + 1.25)
+            window.requestAnimationFrame(update);
+        }
+
         window.requestAnimationFrame(update);
     }
-
-    window.requestAnimationFrame(update);
+    costume.onload = submain
 }
 
-window.onload = main; 
+main();
