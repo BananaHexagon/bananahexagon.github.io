@@ -13,7 +13,7 @@ const stamp = function (c, dx, dy, dd = 0, size = 100, wh = 1,) {
 async function main() {
     const costume = (() => {
         let image = new Image();
-        image.src = "/assets/bananahexagon.png";
+        image.src = "/assets/hugging_yuma.png";
         return image;
     })();
 
