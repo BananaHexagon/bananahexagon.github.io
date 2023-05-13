@@ -3,7 +3,7 @@
 let main = document.querySelector("main");
 let article = document.querySelector("article");
 
-main.insertAdjacentHTML("beforebegin", `
+main.insertAdjacentHTML("afterend", `
 <header>
   <a href="/index.html"><img src="/assets/bananahexagon.png"></a>
   <ul>

@@ -10,7 +10,7 @@ const stamp = function (c, dx, dy, dd = 0, size = 100, wh = 1,) {
     ctx.restore();
 }
 
-async function main() {
+window.onload = async () => {
     const costume = (() => {
         let image = new Image();
         image.src = "/assets/hugging_yuma.png";
@@ -32,5 +32,3 @@ async function main() {
     }
 
 }
-
-main();
