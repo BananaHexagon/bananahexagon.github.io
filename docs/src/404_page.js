@@ -18,7 +18,7 @@ const stamp = function (c, dx, dy, dd = 0, size = 100, wh = 1,) {
 
 window.onload = async () => {
     let costume = new Image();
-    costume.src = "./assets/hugging_yuma.png";
+    costume.src = "/assets/hugging_yuma.png";
     costume.onload = () => {
         console.log("AAA")
         let timer = 0;
