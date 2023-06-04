@@ -21,7 +21,7 @@ main.insertAdjacentHTML("afterend", `
     </li>
     <li>Projects
       <ul>
-        <li><a href="https://github.com/bananahexagon/butter-lang">Butter-lang</a></li>
+        <li><a href="https://github.com/bananahexagon/sugot-lang">Sugot</a></li>
         <li><a href="/sludgetale">Sludgetale</a></li>
         <li><a href="/projects">Other</a></li>
       </ul>

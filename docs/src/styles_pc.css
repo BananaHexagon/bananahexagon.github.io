@@ -43,9 +43,10 @@ header>ul>li:hover {
     background-color: #e4bf47;
 }
 
-header ul,header li {
+header ul,
+header li {
     padding: 0;
-	margin: 0;
+    margin: 0;
 }
 
 li>ul {
@@ -64,7 +65,7 @@ li:hover ul li {
     padding-top: 5px;
     padding-bottom: 5px;
     height: 30px;
-	overflow: visible;
+    overflow: visible;
     transition: 0.2s;
 }
 
@@ -106,6 +107,7 @@ li ul li:nth-last-child(1) {
     border-radius: 2px;
     transition: 0.2s;
 }
+
 .menu_button.button_right div {
     border-bottom: solid 3px #00000000;
     border-left: solid 3px #00000000;
@@ -116,13 +118,14 @@ li ul li:nth-last-child(1) {
 
 /*ヘッダーおしまい*/
 
-.menu_content, .menu_shadow {
+.menu_content,
+.menu_shadow {
     position: fixed;
     top: 50px;
     bottom: 0;
     padding: 20px;
     overflow: auto;
-    transition: left 0.2s,right 0.2s;
+    transition: left 0.2s, right 0.2s;
     left: 100%;
     right: -500px;
 }
@@ -145,11 +148,13 @@ li ul li:nth-last-child(1) {
     right: 0;
 }
 
-html,body,main {
+html,
+body,
+main {
     height: 100%;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
 }
@@ -170,12 +175,13 @@ footer {
 }
 
 footer p {
-    text-align:center;
-    height:60px;
-    line-height:60px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
 }
 
-h2, h3 {
+h2,
+h3 {
     border-bottom: solid 3px #ebebeb;
     border-radius: 1px;
 }
@@ -207,5 +213,22 @@ del {
 }
 
 div.time_stamp {
-    opacity: 0.3; 
+    opacity: 0.3;
+}
+
+.codeblock {
+    border-radius: 5px;
+    background-color: #303030;
+    color: #fff;
+    font-family: monospace;
+    line-height: 1.4em;
+    font-size: 1.2em;
+}
+
+div.codeblock {
+    padding: 0em 1em;
+}
+
+span.codeblock {
+    padding: 0.2em 0.2em;
 }
