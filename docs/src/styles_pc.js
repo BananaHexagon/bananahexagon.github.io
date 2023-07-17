@@ -23,7 +23,7 @@ const header = createElement(`
             </ul>
         </li>
     </ul>
-    <img src="assets/hamburger_black.svg" class="side_button">
+    <img src="/assets/hamburger_black.svg" class="side_button">
 </header>
 `)
 
