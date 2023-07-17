@@ -113,7 +113,7 @@ header li {
 
 header li>ul {
     flex-direction: column;
-    margin-top: 1.1em;
+    margin-top: 1em;
 }
 
 header li>ul>li {
@@ -152,9 +152,9 @@ header a {
 .side_menu_content,
 .side_menu_shadow {
     position: fixed;
-    top: 50px;
+    top: 0;
     bottom: 0;
-    padding: 20px;
+    padding: 5rem 3rem 0 3rem;
     overflow: auto;
     transition: left 0.2s, right 0.2s;
     left: 100%;
@@ -168,7 +168,7 @@ header a {
 .side_menu.opened .side_menu_content {
     left: 65vw;
     right: 0;
-    padding: 2rem 3rem;
+    padding: 5rem 3rem 0 3rem;
 }
 
 .side_menu_shadow {
