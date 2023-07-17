@@ -67,7 +67,7 @@ footer {
 }
 
 footer a {
-    color:#55aaff;
+    color: #55aaff;
     font-weight: bold;
 }
 
@@ -82,6 +82,10 @@ header {
 
 header img {
     height: 100%;
+}
+
+header img:hover {
+    background-color: #e8e8e8;
 }
 
 header ul {
@@ -143,8 +147,9 @@ header a {
 }
 
 .side_button:hover {
-    background-color: #e4e4e4aa;
+    background-color: #e8e8e8;
 }
+
 .side_menu_content,
 .side_menu_shadow {
     position: fixed;
