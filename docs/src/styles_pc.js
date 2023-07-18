@@ -2,7 +2,7 @@
 
 const header = createElement(`
 <header>
-    <a href="https://bananahexagon.github.io"><img src="assets/dev_icon.png"></a>
+    <a href="https://bananahexagon.github.io"><img src="assets/normal_icon.png"></a>
     <ul>
         <li>Info
             <ul>
