@@ -1,14 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
+@media (prefers-color-scheme: light) {
+    :root {
+        --letters_color: #222;
+        --link_color: #3377ff;
+        --ul_color: #e2e2e2;
+        --bg_color: #eee;
+        --ts_color: #ccc;
+        --ac_color:#fff;
+        --ft_color:#666;
+        --h_ul_color: #ccc;
+        --h_h_color: #e8e8e8;
+        --h_m_l_color:#333;
+        --h_m_bg_color:#ececec88;
+        --h_m_bg_h_color:#e4e4e4aa;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --letters_color: #fff;
+        --link_color: #3377ff;
+        --ul_color: #333;
+        --bg_color: #111;
+        --ts_color: #888;
+        --ac_color:#222;
+        --ft_color:#444;
+        --h_ul_color: #555;
+        --h_h_color: #333;
+        --h_m_l_color:#eee;
+        --h_m_bg_color:#36363688;
+        --h_m_bg_h_color:#3a3a3aaa;
+    }
+}
+
 
 html {
     font-family: "Noto Sans JP", sans-serif;
     height: 100%;
-    color: #222
+    color: var(--letters_color)
 }
 
 a {
-    color: #3377ff;
+    color: var(--link_color);
     text-decoration: none;
 }
 
@@ -18,17 +52,17 @@ img.dot {
 }
 
 h1 {
-    border-bottom: solid #20202020;
+    border-bottom: solid var(--ul_color);
     font-size: 2rem;
     margin-top: 0rem;
 }
 
 h2 {
-    border-bottom: solid #20202020;
+    border-bottom: solid var(--ul_color);
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: var(--bg_color);
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -44,11 +78,11 @@ main {
 }
 
 div.time_stamp {
-    color: #20202060;
+    color: var(--ts_color);
 }
 
 article {
-    background-color: #fff;
+    background-color: var(--ac_color);
     padding: 1rem 3rem;
     grid-column: 1 / span 12;
     border-radius: 0.5rem;
@@ -57,7 +91,7 @@ article {
 }
 
 footer {
-    background-color: #444444cc;
+    background-color: var(--ft_color);
     height: 6rem;
     margin: 1.5rem 0 0 0;
     color: #fff;
@@ -72,11 +106,11 @@ footer a {
 
 header {
     position: fixed;
-    background-color: #fff;
+    background-color: var(--ac_color);
     height: 3.5rem;
     inset: 0;
     display: flex;
-    border-bottom: 0.1rem solid #20202040;
+    border-bottom: 0.1rem solid var(--h_ul_color);
 }
 
 header img {
@@ -84,7 +118,7 @@ header img {
 }
 
 header img:hover {
-    background-color: #e8e8e8;
+    background-color: var(--h_h_color);
 }
 
 header ul {
@@ -102,7 +136,7 @@ header>ul>li {
 }
 
 header>ul>li:hover {
-    background-color: #e8e8e8;
+    background-color: var(--h_h_color);
 }
 
 header ul,
@@ -124,7 +158,7 @@ header li>ul>li {
 }
 
 header li:hover ul li {
-    background-color: #ececec88;
+    background-color: var(--h_m_bg_color);
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     height: 2rem;
@@ -133,11 +167,11 @@ header li:hover ul li {
 }
 
 header li:hover ul li:hover {
-    background-color: #e4e4e4aa;
+    background-color: var(--h_m_bg_h_color);
 }
 
 header a {
-    color: #303030;
+    color: var(--h_m_l_color);
 }
 
 .side_button {
@@ -146,7 +180,7 @@ header a {
 }
 
 .side_button:hover {
-    background-color: #e8e8e8;
+    background-color: var(--h_h_color);
 }
 
 .side_menu_content,
@@ -162,7 +196,7 @@ header a {
 }
 
 .side_menu_content {
-    background-color: #fff;
+    background-color: var(--ac_color);
 }
 
 .side_menu.opened .side_menu_content {

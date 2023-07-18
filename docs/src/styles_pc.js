@@ -2,7 +2,7 @@
 
 const header = createElement(`
 <header>
-    <a href="https://bananahexagon.github.io"><img src="/assets/normal_icon.png"></a>
+    <a href="https://bananahexagon.github.io"><img src="assets/dev_icon.png"></a>
     <ul>
         <li>Info
             <ul>
@@ -23,7 +23,10 @@ const header = createElement(`
             </ul>
         </li>
     </ul>
-    <img src="/assets/hamburger_black.svg" class="side_button">
+    <picture class="side_button">
+        <source srcset="/assets/hamburger_white.svg" media="(prefers-color-scheme: dark)">
+        <img src="/assets/hamburger_black.svg">
+    </picture>
 </header>
 `)
 
