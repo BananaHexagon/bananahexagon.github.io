@@ -2,35 +2,35 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --letters_color: #222;
-        --link_color: #3377ff;
-        --ul_color: #e2e2e2;
-        --bg_color: #eee;
-        --ts_color: #ccc;
-        --ac_color:#fff;
-        --ft_color:#666;
-        --h_ul_color: #ccc;
-        --h_h_color: #e8e8e8;
-        --h_m_l_color:#333;
-        --h_m_bg_color:#ececec88;
-        --h_m_bg_h_color:#e4e4e4aa;
+    --letters_color: #222;
+    --link_color: #3377ff;
+    --ul_color: #e2e2e2;
+    --bg_color: #eee;
+    --ts_color: #ccc;
+    --ac_color:#fff;
+    --ft_color:#666;
+    --h_ul_color: #ccc;
+    --h_h_color: #e8e8e8;
+    --h_m_l_color:#333;
+    --h_m_bg_color:#ececec88;
+    --h_m_bg_h_color:#e4e4e4aa;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --letters_color: #fff;
-        --link_color: #3377ff;
-        --ul_color: #333;
-        --bg_color: #111;
-        --ts_color: #888;
-        --ac_color:#222;
-        --ft_color:#444;
-        --h_ul_color: #555;
-        --h_h_color: #333;
-        --h_m_l_color:#eee;
-        --h_m_bg_color:#36363688;
-        --h_m_bg_h_color:#3a3a3aaa;
+    --letters_color: #fff;
+    --link_color: #3377ff;
+    --ul_color: #333;
+    --bg_color: #111;
+    --ts_color: #888;
+    --ac_color:#222;
+    --ft_color:#444;
+    --h_ul_color: #555;
+    --h_h_color: #333;
+    --h_m_l_color:#eee;
+    --h_m_bg_color:#36363688;
+    --h_m_bg_h_color:#3a3a3aaa;
     }
 }
 
