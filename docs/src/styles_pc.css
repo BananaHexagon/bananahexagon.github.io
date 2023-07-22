@@ -172,6 +172,7 @@ header li:hover ul li:hover {
 
 header a {
     color: var(--h_m_l_color);
+    height: 100%;
 }
 
 .side_button {
