@@ -173,12 +173,12 @@ header a {
     margin-left: 1.5rem;
     font-size: 1.4rem;
     height: 0;
-    transition: height 0.2s;
+    overflow: hidden;
 }
 
 .side_menu details[open].menu li {
     height: 1.8rem;
-    transition: height 0.2s;
+    overflow: visible;
 }
 
 .side_menu details.menu a {
