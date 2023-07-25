@@ -21,7 +21,7 @@ const createElement = async html => {
     return div.firstElementChild;
 }
 
-const is_sp = window.innerWidth / window.innerHeight > 9 / 14;
+const is_sp = window.innerHeight / window.innerWidth > 4 / 3;
 
 importCSS(is_sp ? "/src/styles_sp.css" : "/src/styles_pc.css");
 window.onload = async () => {
