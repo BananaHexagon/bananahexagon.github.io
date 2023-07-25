@@ -22,6 +22,7 @@ const createElement = async html => {
 }
 
 const is_sp = window.innerWidth < 768;
+alert(window.innerWidth)
 
 importCSS(is_sp ? "/src/styles_sp.css" : "/src/styles_pc.css");
 window.onload = async () => {
