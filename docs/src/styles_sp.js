@@ -16,7 +16,7 @@ const header = createElement(`
 
 const footer = createElement(`
 <footer>
-    <p>特記のない限り、このサイトのコンテンツは<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a>の下で利用可能です。</p>
+    <p><a href="/info/credit">特記</a>のない限り、このサイトのコンテンツは<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">CC BY-SA 4.0</a>の下で利用可能です。</p>
 </footer>
 `)
 
@@ -28,6 +28,7 @@ let side_menu = createElement(`
         <li><a href="/info/about">About</a></li>
         <li><a href="/info/profile">Profile</a></li>
         <li><a href="/info/contact">Contact</a></li>
+        <li><a href="/info/credit">Credit</a></li>
     </details>
     <details class="menu">
         <summary>Blog</summary>
@@ -40,6 +41,6 @@ let side_menu = createElement(`
     </details>
     <br />
     <h1>クレジット</h1>
-    <p><a href="https://fonts.google.com/noto/specimen/Noto+Sans+JP">Noto Sans JP</a> by Google</p>
+    <p><a href="/info/credit">Credit</a>に全て移設</p>
 </div>
 `)
