@@ -20,9 +20,8 @@ const createElement = async html => {
     div.innerHTML = html;
     return div.firstElementChild;
 }
-
-const is_sp = window.innerWidth < 768;
-alert(`${window.innerWidth} ${window.innerHeight}`)
+16:9
+const is_sp = window.innerWidth / window.innerHeight > 9 / 14;
 
 importCSS(is_sp ? "/src/styles_sp.css" : "/src/styles_pc.css");
 window.onload = async () => {
