@@ -113,11 +113,11 @@ header {
     border-bottom: 0.1rem solid var(--h_ul_color);
 }
 
-header img {
+header picture, header img {
     height: 100%;
 }
 
-header img:hover {
+header picture:hover {
     background-color: var(--h_h_color);
 }
 
