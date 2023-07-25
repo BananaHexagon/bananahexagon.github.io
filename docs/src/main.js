@@ -21,10 +21,11 @@ const createElement = async html => {
     return div.firstElementChild;
 }
 
-importCSS("/src/styles_pc.css");
-window.onload = async () => {
-    importJS("/src/styles_pc.js").onload = async () => {
+const is_sp = window.innerWidth < 768;
 
+importCSS(is_sp ? "/src/styles_sp.css" : "/src/styles_pc.css");
+window.onload = async () => {
+    importJS(is_sp ? "/src/styles_sp.js" : "/src/styles_pc.js").onload = async () => {
         let time_stamp_display = "";
         const page_created = document.querySelector("meta[name='page_created']");
         time_stamp_display += "作成日 - " + (page_created == null ? "" : page_created.content + " ") + "| ";
