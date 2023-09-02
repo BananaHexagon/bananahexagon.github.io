@@ -12,9 +12,9 @@ const header = createElement(`
                 <li><a href="/info/credit">Credit</a></li>
             </ul>
         </li>
-        <li>Blog
+        <li>Note
             <ul>
-                <li><a href="/blog/2023">2023</a></li>
+                <li><a href="/note/2023">2023</a></li>
             </ul>
         </li>
         <li>Projects

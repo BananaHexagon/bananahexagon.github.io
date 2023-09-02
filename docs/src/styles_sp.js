@@ -31,8 +31,8 @@ let side_menu = createElement(`
         <li><a href="/info/credit">Credit</a></li>
     </details>
     <details class="menu">
-        <summary>Blog</summary>
-        <li><a href="/blog/2023">2023</a></li>
+        <summary>Note</summary>
+        <li><a href="/note/2023">2023</a></li>
     </details>
     <details class="menu">
         <summary>Projects</summary>
