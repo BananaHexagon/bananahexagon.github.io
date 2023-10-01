@@ -1,7 +1,7 @@
 // import React from 'react';
 
 // import { FlexSpace } from "../utils";
-import Header from "../compornents/header"
+import Header from "../components/header"
 import './note.css'
 
 const Note = () => (
