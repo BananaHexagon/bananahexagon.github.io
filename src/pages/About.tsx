@@ -2,9 +2,11 @@
 
 // import { FlexSpace } from "../utils";
 import './note.css'
+import Header from "../compornents/header"
 
-const Note = () => (
+const About = () => (
     <div id="note">
+        <Header />
         <div id="main">
             <h1>About</h1>
             <p>Bananahexagonの個人サイトです。</p>
@@ -14,4 +16,4 @@ const Note = () => (
 );
 
 
-export default Note;
+export default About;

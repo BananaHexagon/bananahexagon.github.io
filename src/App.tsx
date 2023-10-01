@@ -1,5 +1,5 @@
 // import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // 注意: Switch から Routes に変更
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Note from './pages/Note';

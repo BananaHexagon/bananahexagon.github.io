@@ -1,13 +1,8 @@
 // import React from 'react';
 
 // import { FlexSpace } from "../utils";
+import Header from "../compornents/header"
 import './note.css'
-
-const Header = () => (
-    <div id="header">
-        <a href="/home">Home</a>
-    </div>
-);
 
 const Note = () => (
     <div id="note">
@@ -20,5 +15,3 @@ const Note = () => (
 )
 
 export default Note;
-
-export { Header };
