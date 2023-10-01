@@ -1,0 +1,39 @@
+#home a {
+    text-decoration: none;
+    color: #1e3286;
+}
+
+#home a:hover {
+    text-decoration: none;
+    color: #2e42a6;
+}
+
+#home {
+    margin: auto ;
+    height: 100%;
+    background-color: #e4e8ec;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Roboto', 'Noto Sans Japanese', sans-serif;
+    font-weight: bold;
+}
+
+#home h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+#home ul {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+#home li {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
