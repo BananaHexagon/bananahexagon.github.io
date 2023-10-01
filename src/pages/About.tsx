@@ -2,9 +2,9 @@
 
 // import { FlexSpace } from "../utils";
 import './note.css'
-import Header from "../components/header"
+import { Header } from "../components/header";
 
-const About = () => (
+export const About = () => (
     <div id="note">
         <Header />
         <div id="main">
@@ -15,5 +15,3 @@ const About = () => (
     </div>
 );
 
-
-export default About;

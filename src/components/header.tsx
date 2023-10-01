@@ -1,13 +1,17 @@
-const Header = () => (
+// import "./header.css"
+
+export const Header = () => (
     <div id="header">
+        <a href="/">
+            <img src="/normal_icon.png" />
+        </a>
         <ul>
-            <li><a href="/">Home</a></li>
             <li>Info
                 <ul>
-                    <li><a href="/info/about">About</a></li>
-                    <li><a href="/info/profile">Profile</a></li>
-                    <li><a href="/info/contact">Contact</a></li>
-                    <li><a href="/info/credit">Credit</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/credit">Credit</a></li>
                 </ul>
             </li>
             <li><a href="/note">Note</a>
@@ -24,5 +28,3 @@ const Header = () => (
         </ul>
     </div>
 );
-
-export default Header

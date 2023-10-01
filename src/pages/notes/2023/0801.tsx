@@ -1,7 +1,7 @@
 
-import Header from "../../../components/header";
+import { Header } from "../../../components/header";
 
-const Note = () => (
+export const Note = () => (
     <div id="note">
         <Header />
         <div id="main">
@@ -31,5 +31,3 @@ const Note = () => (
         </div>
     </div>
 );
-
-export default Note;
