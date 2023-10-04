@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;900&family=Noto+Serif+JP:wght@400;900&family=Roboto:wght@400;900&family=Zen+Kurenaido&display=swap');
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --char: #222;
+        --link: #2255ff;
+        --link-visited: #6633dd;
+        --background: #eeeeff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --char: #ddd;
+        --link: #2255ff;
+        --link-visited: #6633dd;
+        --background: #222233;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background);
+}
+
+body:before,
+body:after{
+    content: "";
+    flex-grow: 1;
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+    color: var(--char);
+}
+div.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Roboto;
+    font-weight: 900;
+    flex-grow: 1;
+    justify-content: center;
+}
+div.footer {
+    font-size: 1.5rem;
+    font-family: Roboto, Noto Sans JP, serif;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0.4;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 7rem;
+}
+
+a {
+    color: var(--link);
+    line-height: 5rem;
+}
+
+a:visited {
+    color: var(--link-visited);
+}

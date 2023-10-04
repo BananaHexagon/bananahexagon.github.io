@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;900&family=Noto+Serif+JP:wght@400;900&family=Roboto:wght@400;900&family=Zen+Kurenaido&display=swap');
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --char: #222;
+        --link: #2255ff;
+        --link-visited: #6633dd;
+        --background: #f8f8ff;
+        --accent: #d8d8df;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --char: #eee;
+        --link: #2255ff;
+        --link-visited: #6633dd;
+        --background: #222233;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background);
+}
+
+main {
+    width: 55vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: var(--char);
+}
+
+article {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-family: Roboto, Noto Sans JP;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+main p {
+    margin: 0 5vw;
+}
+
+main h1 {
+    font-size: 3rem;
+    font-family: Roboto, Noto Sans JP;
+    font-weight: 900;
+    text-align: center;
+}
+
+main h2 {
+    margin: 0.6rem 5vw 0.6rem 4vw;
+    padding-left: calc(1vw - 0.5rem);
+    font-size: 2rem;
+    font-family: Roboto, Noto Sans JP;
+    font-weight: 400;
+    border-left: 0.5rem solid var(--accent);
+}
+
+main h3 {
+    margin: 0.4rem 5vw 0.4rem 4vw;
+    padding-left: calc(1vw - 0.5rem);
+    font-size: 1.6rem;
+    font-family: Roboto, Noto Sans JP;
+    font-weight: 400;
+    border-left: 0.5rem solid var(--accent);
+}
+
+main h4 {
+    margin: 0.3rem 5vw 0.3rem 4vw;
+    padding-left: calc(1vw - 0.5rem);
+    font-size: 1.4rem;
+    font-family: Roboto, Noto Sans JP;
+    font-weight: 400;
+    border-left: 0.5rem solid var(--accent);
+}
+
+main footer {
+    font-size: 1.5rem;
+    font-family: Roboto, Noto Sans JP, serif;
+    font-weight: 400;
+    text-align: center;
+    opacity: 0.4;
+}

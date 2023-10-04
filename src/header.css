@@ -1,0 +1,33 @@
+header {
+    position:fixed;
+    flex-direction: row-reverse;
+    display:flex;
+    height: 4rem;
+    width: 100vw;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 1rem;
+}
+
+header>a>img,header>a {
+    height: 100%;
+    flex-grow: 1;
+}
+
+header>ul {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+header>ul>li {
+    font-size: 2rem;
+    height: 100%;
+    line-height: 100%;
+    font-family: Roboto, Noto Sans JP;
+    color: var(--char);
+    opacity: 1;
+    margin-top: 1rem;
+    width: 10rem;
+    text-align: center;
+}
