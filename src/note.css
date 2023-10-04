@@ -96,3 +96,12 @@ main footer {
     text-align: center;
     opacity: 0.4;
 }
+
+main a {
+    color: var(--link);
+    line-height: 5rem;
+}
+
+main a:visited {
+    color: var(--link-visited);
+}
