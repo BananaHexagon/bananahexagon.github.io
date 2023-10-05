@@ -53,16 +53,16 @@ div.main {
     justify-content: center;
 }
 
-h1 {
+div.content h1 {
     font-size: 3.5rem;
     line-height: 7rem;
 }
 
-a {
+div.content a {
     color: var(--link);
     line-height: 5rem;
 }
 
-a:visited {
+div.content a:visited {
     color: var(--link-visited);
 }
