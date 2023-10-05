@@ -52,13 +52,6 @@ div.main {
     flex-grow: 1;
     justify-content: center;
 }
-div.footer {
-    font-size: 1.5rem;
-    font-family: Roboto, Noto Sans JP, serif;
-    font-weight: 400;
-    text-align: center;
-    opacity: 0.4;
-}
 
 h1 {
     font-size: 3.5rem;
