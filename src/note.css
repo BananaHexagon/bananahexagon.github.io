@@ -34,7 +34,6 @@ body {
 }
 
 main {
-    width: 55vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -42,6 +41,7 @@ main {
 }
 
 article {
+    width: 55vw;
     margin-top: 5rem;
     margin-bottom: 5rem;
     display: flex;
