@@ -26,7 +26,7 @@ header>ul>li {
     font-size: 2rem;
     height: 100%;
     line-height: 100%;
-    font-family: Roboto, Noto Sans JP;
+    font-family: Roboto, Noto Sans JP, undertale_bold;
     color: var(--char);
     opacity: 1;
     margin-top: 1rem;

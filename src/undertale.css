@@ -1,25 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&family=Noto+Serif+JP:wght@400;900&family=Roboto:wght@400;900&family=Zen+Kurenaido&display=swap');
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --char: #222;
-        --link: #2255ff;
-        --link-hover: #3377ff;
-        --link-visited: #6633dd;
-        --background: #f8f8ff;
-        --accent: #d8d8df;
-        --scroll-bar: #b8d8ff;
-    }
+@font-face {
+    font-family: 'undertale';
+    src: url("/assets/JF-Dot-Shinonome16.ttf")
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --char: #eee;
-        --link: #2255ff;
-        --link-hover: #3377ff;
-        --link-visited: #6633dd;
-        --background: #222233;
-    }
+@font-face {
+    font-family: 'undertale_bold';
+    src: url("/assets/JF-Dot-Shinonome16B.ttf")
+}
+
+:root {
+    --char: #eee;
+    --link: #2255ff;
+    --link-hover: #3377ff;
+    --link-visited: #6633dd;
+    --background: #222233;
 }
 
 html,
@@ -47,8 +41,7 @@ article {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    font-family: Roboto,undertale, Noto Sans JP;
-    font-weight: 400;
+    font-family: undertale;
     font-size: 1.2rem;
 }
 
@@ -59,8 +52,7 @@ main p {
 
 main h1 {
     font-size: 3rem;
-    font-family: Roboto, Noto Sans JP;
-    font-weight: 900;
+    font-family: undertale_bold;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -69,8 +61,7 @@ main h2 {
     margin: 1rem 5vw 1rem 4vw;
     padding-left: calc(1vw - 0.5rem);
     font-size: 2rem;
-    font-family: Roboto, Noto Sans JP;
-    font-weight: 400;
+    font-family: undertale_bold;
     border-left: 0.5rem solid var(--accent);
 }
 
@@ -78,8 +69,7 @@ main h3 {
     margin: 0.7rem 5vw 0.7rem 4vw;
     padding-left: calc(1vw - 0.5rem);
     font-size: 1.6rem;
-    font-family: Roboto, Noto Sans JP;
-    font-weight: 400;
+    font-family: undertale_bold;
     border-left: 0.5rem solid var(--accent);
 }
 
@@ -87,15 +77,13 @@ main h4 {
     margin: 0.5rem 5vw 0.5rem 4vw;
     padding-left: calc(1vw - 0.5rem);
     font-size: 1.4rem;
-    font-family: Roboto, Noto Sans JP;
-    font-weight: 400;
+    font-family: undertale_bold;
     border-left: 0.5rem solid var(--accent);
 }
 
 main footer {
     font-size: 1.5rem;
-    font-family: Roboto, Noto Sans JP, serif;
-    font-weight: 400;
+    font-family: undertale_bold;
     text-align: center;
     opacity: 0.4;
 }
@@ -120,4 +108,3 @@ main ul {
 main li {
     height: 2rem;
 }
-
