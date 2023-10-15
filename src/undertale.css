@@ -12,8 +12,9 @@
     --char: #eee;
     --link: #2255ff;
     --link-hover: #3377ff;
-    --link-visited: #6633dd;
+    --link-visited: #9955ee;
     --background: #222233;
+    --accent: #444466;
 }
 
 html,
