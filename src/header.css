@@ -1,7 +1,7 @@
 header {
-    position:fixed;
+    position: fixed;
     flex-direction: row-reverse;
-    display:flex;
+    display: flex;
     height: 4rem;
     width: 100vw;
     margin-right: 0;
@@ -10,7 +10,8 @@ header {
     padding-right: 1rem;
 }
 
-header>a>img,header>a {
+header>a>img,
+header>a {
     height: 100%;
     flex-grow: 1;
 }
@@ -25,10 +26,22 @@ header>ul>li {
     font-size: 2rem;
     height: 100%;
     line-height: 100%;
-    font-family: Roboto, Noto Sans JP;
+    font-family: Roboto, Noto Sans JP, undertale_bold;
     color: var(--char);
     opacity: 1;
     margin-top: 1rem;
     width: 10rem;
     text-align: center;
+}
+
+header {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: 0.3s;
+}
+
+header.invisible {
+    -webkit-transform: translateY(-150%);
+    transform: translateY(-150%);
+    transition: 0.3s;
 }

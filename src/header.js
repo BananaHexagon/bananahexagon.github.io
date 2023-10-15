@@ -5,8 +5,8 @@
         return parent.children[0];
     }
 
-    const header = document.getElementById("header");
-    const header_define = createElement(`
+    const header_pos = document.getElementById("header");
+    const header_new = createElement(`
 <header>
     <ul>
         <li><a href="/note/">Note</a></li>
@@ -18,7 +18,17 @@
     </a>
 </header>
 `);
-
-    header.replaceWith(header_define);
-
+    header_pos.replaceWith(header_new);
+    let pos = 0;
+    let b_pos = 0;
+    console.log(document.documentElement.scrollHeight-window.innerHeight)
+    window.addEventListener("scroll", () => {
+        b_pos = pos;
+        pos = window.scrollY;
+        if (b_pos < pos && document.documentElement.scrollHeight-window.innerHeight > pos) {
+            header_new.classList.add("invisible");
+        } else {
+            header_new.classList.remove("invisible");
+        }
+    })
 }
