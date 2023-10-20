@@ -21,7 +21,6 @@
     header_pos.replaceWith(header_new);
     let pos = 0;
     let b_pos = 0;
-    console.log(document.documentElement.scrollHeight-window.innerHeight)
     window.addEventListener("scroll", () => {
         b_pos = pos;
         pos = window.scrollY;
