@@ -14,7 +14,7 @@
         <li><a href="/projects.html">Projects</a></li>
     </ul>
     <a href="/index.html">
-        <img src="/assets/normal_icon.png">
+        <img src="/assets/normal_icon.png" alt="bananahexagon">
     </a>
 </header>
 `);
