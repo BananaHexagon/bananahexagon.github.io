@@ -14,14 +14,13 @@
         <li><a href="/projects.html">Projects</a></li>
     </ul>
     <a href="/index.html">
-        <img src="/assets/normal_icon.png">
+        <img src="/assets/normal_icon.png" alt="bananahexagon">
     </a>
 </header>
 `);
     header_pos.replaceWith(header_new);
     let pos = 0;
     let b_pos = 0;
-    console.log(document.documentElement.scrollHeight-window.innerHeight)
     window.addEventListener("scroll", () => {
         b_pos = pos;
         pos = window.scrollY;
