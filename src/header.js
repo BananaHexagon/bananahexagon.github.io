@@ -11,9 +11,9 @@
     <ul>
         <li><a href="/note/">Note</a></li>
         <li><a href="/info/">Info</a></li>
-        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/projects">Projects</a></li>
     </ul>
-    <a href="/index.html">
+    <a href="/">
         <img src="/assets/normal_icon.png" alt="bananahexagon">
     </a>
 </header>
