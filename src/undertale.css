@@ -42,7 +42,8 @@ article {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    font-family: undertale;
+    font-family: undertale, Noto Sans JP;
+    font-weight: 400;
     font-size: 1.2rem;
 }
 
@@ -53,7 +54,8 @@ main p {
 
 main h1 {
     font-size: 3rem;
-    font-family: undertale_bold;
+    font-family: undertale_bold, Noto Sans JP;
+    font-weight: 900;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -62,7 +64,8 @@ main h2 {
     margin: 1rem 5vw 1rem 4vw;
     padding-left: calc(1vw - 0.5rem);
     font-size: 2rem;
-    font-family: undertale_bold;
+    font-family: undertale_bold, Noto Sans JP;
+    font-weight: 400;
     border-left: 0.5rem solid var(--accent);
 }
 
@@ -70,7 +73,8 @@ main h3 {
     margin: 0.7rem 5vw 0.7rem 4vw;
     padding-left: calc(1vw - 0.5rem);
     font-size: 1.6rem;
-    font-family: undertale_bold;
+    font-family: undertale_bold, Noto Sans JP;
+    font-weight: 400;
     border-left: 0.5rem solid var(--accent);
 }
 
@@ -78,13 +82,15 @@ main h4 {
     margin: 0.5rem 5vw 0.5rem 4vw;
     padding-left: calc(1vw - 0.5rem);
     font-size: 1.4rem;
-    font-family: undertale_bold;
+    font-family: undertale_bold, Noto Sans JP;
+    font-weight: 400;
     border-left: 0.5rem solid var(--accent);
 }
 
 main footer {
     font-size: 1.5rem;
-    font-family: undertale_bold;
+    font-family: undertale, Noto Sans JP, serif;
+    font-weight: 400;
     text-align: center;
     opacity: 0.4;
 }
@@ -109,3 +115,4 @@ main ul {
 main li {
     height: 2rem;
 }
+
