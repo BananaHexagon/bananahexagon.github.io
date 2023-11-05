@@ -121,3 +121,33 @@ main li {
     height: 2rem;
 }
 
+div.img_wrapper {
+    margin: 0 5vw;
+    text-align: center;
+    width: calc(100% - 10vw);
+}
+
+div.img_wrapper img {
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--accent);
+}
+
+div.img_wrapper.full img {
+    width: 100%;
+}
+
+div.img_wrapper.small img {
+    width: 50%;
+}
+
+div.img_wrapper.mid img {
+    width: 75%;
+}
+
+small {
+    font-size: 0.7em;
+}
+
+big {
+    font-size: 1.4em;
+}

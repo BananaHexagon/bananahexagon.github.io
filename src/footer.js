@@ -8,7 +8,7 @@
     const footer = document.getElementById("footer");
     const footer_define = createElement(`
 <footer>
-Bananahexagon | <a href="/links.html">links</a>
+Bananahexagon | <a href="/info/about.html">About</a>
 </footer>
 `);
 
