@@ -18,15 +18,37 @@
     <script src="/src/header.js" defer></script>
     <script src="/src/footer.js" defer></script>
     <script src="/src/main.js" defer></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="/src/libs/prism.js"></script>
+    <link rel="stylesheet" href="/src/libs/prism.css">
 </head>
 
 <body>
     <div id="header"></div>
     <main>
         <article>
-            <h1>MathJax入れただけ</h1>
+            <h1>MathJaxとPrismを入れたよ！！！！</h1>
+            <p>数式とコードを表示できるようになってうれしいのでさっき作った円周率を求める式とコードを置いておきます</p>
+            <p>\(\pi = \displaystyle \lim_{n \to \infty} \sum_{i=0}^{n-1} \sqrt{\left(\sqrt{1 - \left(\displaystyle\frac{1}{n}\right)}-\sqrt{1 - \left(\displaystyle\frac{i+1}{n}\right)}\right)^2+\left(\displaystyle\frac{1}{n}\right)^2} \)</p>
+            <pre data-label="pi.rs"><code class="language-rust">pub fn main(split: u32) -> f64 {
+    let mut r = 0.0;
+    for i in 0..split {
+        r += part(
+            (i as f64) / (split as f64),
+            ((i + 1) as f64) / (split as f64),
+        );
+    }
+    r * 2.0
+}
+
+fn part(a: f64, b: f64) -> f64 {
+    let ah = (1.0 - a * a).sqrt();
+    let bh = (1.0 - b * b).sqrt();
+    let h = ah - bh;
+    let w = b - a;
+    (h * h + w * w).sqrt()
+}</code></pre>
         </article>
         <div id="footer"></div>
     </main>
