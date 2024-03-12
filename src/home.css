@@ -15,5 +15,9 @@ body {
 #icon {
     image-rendering: pixelated;
     width: 160px;
-    margin: 0 auto;
+}
+
+h1 {
+    color: #fff;
+    font-size: 60px;
 }
