@@ -85,7 +85,6 @@ h1 {
 }
 
 .b_hex_is_great .b_hex {
-    height: 80%;
     opacity: 0.5;
     position: relative;
 }
@@ -101,116 +100,6 @@ h2 {
     font-family: "Noto Serif JP", sans-serif;
     font-weight: 400;
     font-size: 80px;
-}
-
-.b_hex_is_great.br_0 .description {
-    animation: description_fade_in_0 linear both;
-    animation-timeline: view();
-    animation-range: entry 25% cover 30%;
-}
-
-.b_hex_is_great.br_0 .b_hex {
-    animation: b_hex_fade_in_0 linear both;
-    animation-timeline: view();
-    animation-range: entry 25% cover 30%;
-}
-
-@keyframes b_hex_fade_in_0 {
-    from {
-        opacity: 0;
-        left: -80px;
-    }
-
-    to {
-        opacity: 0.5;
-        left: 20px;
-    }
-}
-
-@keyframes description_fade_in_0 {
-    from {
-        left: 30%;
-        opacity: 0;
-    }
-
-    to {
-        left: 0;
-        opacity: 1;
-    }
-}
-
-
-
-.b_hex_is_great.br_1 .description {
-    animation: description_fade_in_1 linear both;
-    animation-timeline: view();
-    animation-range: entry 25% cover 30%;
-}
-
-.b_hex_is_great.br_1 .b_hex {
-    animation: b_hex_fade_in_1 linear both;
-    animation-timeline: view();
-    animation-range: entry 25% cover 30%;
-}
-
-@keyframes b_hex_fade_in_1 {
-    from {
-        opacity: 0;
-        right: -80px;
-    }
-
-    to {
-        opacity: 0.5;
-        right: 20px;
-    }
-}
-
-@keyframes description_fade_in_1 {
-    from {
-        right: 30%;
-        opacity: 0;
-    }
-
-    to {
-        right: 0;
-        opacity: 1;
-    }
-}
-
-.b_hex_is_great.br_2 .description {
-    animation: description_fade_in_2 linear both;
-    animation-timeline: view();
-    animation-range: entry 25% cover 30%;
-}
-
-.b_hex_is_great.br_2 .b_hex {
-    animation: b_hex_fade_in_2 linear both;
-    animation-timeline: view();
-    animation-range: entry 25% cover 30%;
-}
-
-@keyframes b_hex_fade_in_2 {
-    from {
-        opacity: 0;
-        right: 15%;
-    }
-
-    to {
-        opacity: 0.5;
-        right: 0px;
-    }
-}
-
-@keyframes description_fade_in_2 {
-    from {
-        left: 15%;
-        opacity: 0;
-    }
-
-    to {
-        left: 0;
-        opacity: 1;
-    }
 }
 
 footer {
@@ -254,4 +143,182 @@ h3 {
     font-size: 20px;
     margin-bottom: 15px;
     color: #ccc;
+}
+
+
+@media screen and (max-width: 768px) {
+    .icon {
+        height: 100%;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 160px;
+        margin-bottom: 20px;
+    }
+
+    #links {
+        height: 60px;
+    }
+
+
+    .b_hex_is_great {
+        width: 100%;
+        height: fit-content;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .b_hex_is_great .b_hex {
+        width: 80%;
+    }
+
+    .b_hex_is_great .description {
+        padding: 40px;
+    }
+
+    .b_hex_is_great.br_1 .b_hex,.b_hex_is_great.br_2 .b_hex {
+        display: none;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    #footer_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        height:fit-content;
+        padding:20px 0 ;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .b_hex_is_great .b_hex {
+        height: 80%;
+    }
+
+    .b_hex_is_great.br_0 .description {
+        animation: description_fade_in_0 linear both;
+        animation-timeline: view();
+        animation-range: entry 25% cover 30%;
+    }
+
+    .b_hex_is_great.br_0 .b_hex {
+        animation: b_hex_fade_in_0 linear both;
+        animation-timeline: view();
+        animation-range: entry 25% cover 30%;
+    }
+
+    @keyframes b_hex_fade_in_0 {
+        from {
+            opacity: 0;
+            left: -80px;
+        }
+
+        to {
+            opacity: 0.5;
+            left: 20px;
+        }
+    }
+
+    @keyframes description_fade_in_0 {
+        from {
+            left: 30%;
+            opacity: 0;
+        }
+
+        to {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    .b_hex_is_great.br_1 .description {
+        animation: description_fade_in_1 linear both;
+        animation-timeline: view();
+        animation-range: entry 25% cover 30%;
+    }
+
+    .b_hex_is_great.br_1 .b_hex {
+        animation: b_hex_fade_in_1 linear both;
+        animation-timeline: view();
+        animation-range: entry 25% cover 30%;
+    }
+
+    @keyframes b_hex_fade_in_1 {
+        from {
+            opacity: 0;
+            right: -80px;
+        }
+
+        to {
+            opacity: 0.5;
+            right: 20px;
+        }
+    }
+
+    @keyframes description_fade_in_1 {
+        from {
+            right: 30%;
+            opacity: 0;
+        }
+
+        to {
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    .b_hex_is_great.br_2 .description {
+        animation: description_fade_in_2 linear both;
+        animation-timeline: view();
+        animation-range: entry 25% cover 30%;
+    }
+
+    .b_hex_is_great.br_2 .b_hex {
+        animation: b_hex_fade_in_2 linear both;
+        animation-timeline: view();
+        animation-range: entry 25% cover 30%;
+    }
+
+    @keyframes b_hex_fade_in_2 {
+        from {
+            opacity: 0;
+            right: 15%;
+        }
+
+        to {
+            opacity: 0.5;
+            right: 0px;
+        }
+    }
+
+    @keyframes description_fade_in_2 {
+        from {
+            left: 15%;
+            opacity: 0;
+        }
+
+        to {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
 }
