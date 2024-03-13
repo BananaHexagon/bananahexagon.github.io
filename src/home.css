@@ -1,23 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap');
+
 html,
 body {
     margin: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 20px;
 }
 
 body {
     background-color: #403510;
+    overflow-x: hidden;
 }
 
-#icon {
-    image-rendering: pixelated;
-    width: 160px;
+.icon {
+    height: 100%;
 }
 
 h1 {
     color: #fff;
     font-size: 60px;
+    font-weight: 600;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+
+#links>a>img {
+    height: 100%;
+}
+
+#links>a {
+    height: 100%;
+}
+
+#links {
+    height: 80px;
+}
+
+#centered_outer {
+    width: 100%;
+    height: 100%;
+}
+
+#centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.b_hex {
+    image-rendering: pixelated;
+}
+
+.b_hex_is_great {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b_hex_is_great.br_0 {
+    background-color: #332a0d;
+}
+
+.b_hex_is_great.br_1 {
+    background-color: #26200a;
+}
+
+.b_hex_is_great .b_hex {
+    height: 80%;
+    opacity: 0.5;
+    position: relative;
+}
+
+.b_hex_is_great .description {
+    height: 80%;
+    padding: 0 80px;
+    position: relative;
+}
+
+h2 {
+    color: #fff;
+    font-family: "Noto Serif JP", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+}
+
+.b_hex_is_great.br_0 .description {
+    animation: description_fade_in_0 linear both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 30%;
+}
+
+.b_hex_is_great.br_0 .b_hex {
+    animation: b_hex_fade_in_0 linear both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 30%;
+}
+
+@keyframes b_hex_fade_in_0 {
+    from {
+        opacity: 0;
+        left: -80px;
+    }
+
+    to {
+        opacity: 0.5;
+        left: 20px;
+    }
+}
+
+@keyframes description_fade_in_0 {
+    from {
+        left: 30%;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
+
+.b_hex_is_great.br_1 .description {
+    animation: description_fade_in_1 linear both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 30%;
+}
+
+.b_hex_is_great.br_1 .b_hex {
+    animation: b_hex_fade_in_1 linear both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 30%;
+}
+
+@keyframes b_hex_fade_in_1 {
+    from {
+        opacity: 0;
+        right: -80px;
+    }
+
+    to {
+        opacity: 0.5;
+        right: 20px;
+    }
+}
+
+@keyframes description_fade_in_1 {
+    from {
+        right: 30%;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.b_hex_is_great.br_2 .description {
+    animation: description_fade_in_2 linear both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 30%;
+}
+
+.b_hex_is_great.br_2 .b_hex {
+    animation: b_hex_fade_in_2 linear both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 30%;
+}
+
+@keyframes b_hex_fade_in_2 {
+    from {
+        opacity: 0;
+        right: 15%;
+    }
+
+    to {
+        opacity: 0.5;
+        right: 0px;
+    }
+}
+
+@keyframes description_fade_in_2 {
+    from {
+        left: 15%;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: #332a0d;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer_grid {
+    width: 100%;
+    flex-grow: 1;
+    margin: 40px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.footer_logo {
+    height: 80px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer_content {
+    padding: 10px;
+}
+
+.footer_content h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.footer_content li {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ccc;
 }
