@@ -7,14 +7,14 @@ body {
     height: 100%;
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    color: #fff;
+    color: #261f0a;
     font-size: 20px;
 }
 
 body {
-    background-color: #332a0d;
+    background-color: #fbf6e2;
     overflow-x: hidden;
 }
 
@@ -29,7 +29,7 @@ main {
 }
 
 article {
-    background-color: #403510;
+    background-color: #fff;
     width: 100%;
     flex-grow: 1;
     border-radius: 10px;
@@ -38,15 +38,26 @@ article {
 
 h1 {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     font-size: 60px;
     font-weight: 600;
     text-align: center;
 }
 
-h2 {
-    font-size: 40px;
+#head h2 {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-size: 30px;
     font-weight: 400;
+    text-align: center;
+}
+#head h2::before,#head h2::after {
+    content: "-";
+}
+
+article h2 {
+    font-size: 40px;
+    font-weight: 500;
     padding-top: 12px;
     padding-bottom: 4px;
     margin-bottom: 8px;
@@ -55,29 +66,29 @@ h2 {
 
 h3 {
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 9px;
     padding-bottom: 6px;
     margin-bottom: 6px;
 }
 
 table {
-    border: solid 2px #332a0d;
+    border: solid 1px #261f0a;
 }
 
 table td,
 table th {
     text-align: center;
-    border: solid 2px #332a0d;
+    border: solid 1px #261f0a;
     padding: 8px 6px;
 }
 
 table th {
-    background-color: #59480d;
+    background-color: #fbf6e2;
 }
 
 table td {
-    background-color: #4d3e0f;
+    background-color: #fff;
 }
 
 
