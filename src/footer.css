@@ -43,6 +43,13 @@ footer h3 {
     color: #ccc;
 }
 
+.footer_content h4 a {
+    color: #fff;
+}
+.footer_content li a {
+    color: #ccc;
+}
+
 .b_hex {
     image-rendering: pixelated;
 }
