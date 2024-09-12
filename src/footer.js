@@ -10,7 +10,7 @@ const footer = `<footer>
                 </ul>
             </div>
             <div class="footer_content">
-                <h4>Void</h4>
+                <h4>Works</h4>
                 <ul>
                 </ul>
             </div>
