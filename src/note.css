@@ -72,12 +72,12 @@ article h2 {
     border-bottom: 2px solid var(--border-color);
 }
 
-h3 {
+article h3 {
     font-size: 25px;
     font-weight: 500;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 6px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 table {
@@ -129,4 +129,36 @@ table td {
         height: 160px;
         margin-bottom: 20px;
     }
+}
+
+article img {
+    max-width: 100%;
+}
+
+div.space_line_1 {
+    height: 20px;
+}
+
+div.space_line_2 {
+    height: 40px;
+}
+
+div.space_line_4 {
+    height: 80px;
+}
+
+div.space_line_8 {
+    height: 160px;
+}
+
+div.space_line_16 {
+    height: 320px;
+}
+
+div.space_line_32 {
+    height: 640px;
+}
+
+div.space_line_64 {
+    height: 1280px;
 }
