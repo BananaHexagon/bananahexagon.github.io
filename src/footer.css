@@ -50,6 +50,10 @@ footer h3 {
     color: #ccc;
 }
 
+.footer_logo h3 {
+    height:66px;
+}
+
 .b_hex {
     image-rendering: pixelated;
 }

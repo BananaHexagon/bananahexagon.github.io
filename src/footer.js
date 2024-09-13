@@ -1,12 +1,12 @@
 const footer = `<footer>
         <div id="footer_grid">
             <div class="footer_content">
-                <h4><a href="/info">Info</a></h4>
+                <h4><a href="/info/">Info</a></h4>
                 <ul>
-                    <li><a href="/info/about">About</a></li>
-                    <li><a href="/info/profile">Profile</a></li>
-                    <li><a href="/info/readme">Readme</a></li>
-                    <li><a href="/info/credit">Credit</a></li>
+                    <li><a href="/info/about/">About</a></li>
+                    <li><a href="/info/profile/">Profile</a></li>
+                    <li><a href="/info/readme/">Readme</a></li>
+                    <li><a href="/info/credit/">Credit</a></li>
                 </ul>
             </div>
             <div class="footer_content">
@@ -15,9 +15,8 @@ const footer = `<footer>
                 </ul>
             </div>
             <div class="footer_content">
-                <h4><a href="/sludgetale">SLUDGETALE</a></h4>
+                <h4><a href="/sludgetale/">SludgeTale</a></h4>
                 <ul>
-                    <li><a href="/sludge_sans">Sans Fight</a></li>
                 </ul>
             </div>
             <div class="footer_content">

@@ -1,28 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&display=swap');
-
 html,
 body {
     margin: 0;
     width: 100%;
     height: 100%;
-    font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: #261f0a;
+    color: var(--text-color);
     font-size: 20px;
 }
 
 a {
-    color: #4d97ff;
+    color: var(--link-color);
 }
 
 a:visited {
-    color: #855cd6;
+    color: var(--link-color-visited);
 }
 
 body {
-    background-color: #fbf6e2;
+    background-color: var(--background-color-1);
     overflow-x: hidden;
 }
 
@@ -37,7 +32,7 @@ main {
 }
 
 article {
-    background-color: #fff;
+    background-color: var(--background-color-2);
     width: 100%;
     flex-grow: 1;
     border-radius: 10px;
@@ -74,7 +69,7 @@ article h2 {
     padding-top: 20px;
     padding-bottom: 4px;
     margin-bottom: 8px;
-    border-bottom: 2px solid #332a0d
+    border-bottom: 2px solid var(--border-color);
 }
 
 h3 {
@@ -86,25 +81,23 @@ h3 {
 }
 
 table {
-    border: solid 1px #261f0a;
+    border: solid 1px var(--text-color);
 }
 
 table td,
 table th {
     text-align: center;
-    border: solid 1px #261f0a;
+    border: solid 1px var(--text-color);
     padding: 8px 6px;
 }
 
 table th {
-    background-color: #fbf6e2;
+    background-color: var(--background-color-2);
 }
 
 table td {
-    background-color: #fff;
+    background-color: var(--background-color-1);
 }
-
-
 
 .logo .icon {
     height: 100%;
@@ -123,7 +116,7 @@ table td {
     }
 
     .logo h1 {
-        color: #fff;
+        color: var(--background-color-1);
         font-size: 40px;
         font-weight: 600;
     }
