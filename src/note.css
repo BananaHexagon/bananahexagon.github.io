@@ -162,3 +162,15 @@ div.space_line_32 {
 div.space_line_64 {
     height: 1280px;
 }
+
+article ul {
+    padding-left: 25px;
+}
+
+article ul>li {
+    list-style: circle;
+}
+
+article ol>li {
+    list-style: upper-roman;
+}
