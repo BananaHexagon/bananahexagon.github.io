@@ -12,11 +12,13 @@ const footer = `<footer>
             <div class="footer_content">
                 <h4>Works</h4>
                 <ul>
+                    <li><a href="https://bananahexagon.github.io/banahexel_site">BanaHexel</a></li>
                 </ul>
             </div>
             <div class="footer_content">
                 <h4><a href="/sludgetale">SludgeTale</a></h4>
                 <ul>
+                    <li><a href="/sludgetale/hexagon_kimchi_happy_union_verse_abandoned_school_verse_time_trio">HKHUVASVTT</a></li>
                 </ul>
             </div>
             <div class="footer_content">
